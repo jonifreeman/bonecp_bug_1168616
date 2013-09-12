@@ -2,7 +2,7 @@
 
 1. Create a test database
 
-# Give password 'secret' or change the given password in benchmark.scala
+// Give password 'secret' or change the given password in benchmark.scala
 sudo -u postgres createuser -P bonecptest 
 sudo -u postgres createdb -O bonecptest bonecptest
 sudo -u postgres psql bonecptest < src/main/resources/schema.sql
