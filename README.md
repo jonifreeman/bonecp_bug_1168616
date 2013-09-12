@@ -1,23 +1,23 @@
-# Usage
+## Usage
 
-1. Create a test database
+* Create a test database
 
-// Give password 'secret' or change the given password in benchmark.scala
-sudo -u postgres createuser -P bonecptest 
-sudo -u postgres createdb -O bonecptest bonecptest
-sudo -u postgres psql bonecptest < src/main/resources/schema.sql
+    // Give password 'secret' or change the given password in benchmark.scala
+    sudo -u postgres createuser -P bonecptest 
+    sudo -u postgres createdb -O bonecptest bonecptest
+    sudo -u postgres psql bonecptest < src/main/resources/schema.sql
 
-2. Start REPL
+* Start REPL
 
-./sbt console
+    ./sbt console
 
-3. Run the benchmark
+* Run the benchmark
 
-scala> benchmark.Test.run
+    scala> benchmark.Test.run
 
-# Results on Joni's machine
+## Results on Joni's machine
 
-## bonecp 0.7.1
+### bonecp 0.7.1
 
     scala> benchmark.Test.run
     3208ms
@@ -34,7 +34,7 @@ scala> benchmark.Test.run
     scala> benchmark.Test.run
     2781ms
 
-## bonecp 0.8.0-alpha1 (edit build.scala and reboot sbt)
+### bonecp 0.8.0-alpha1 (edit build.scala and reboot sbt)
 
     scala> benchmark.Test.run
     6495ms
